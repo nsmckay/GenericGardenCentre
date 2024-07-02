@@ -10,7 +10,8 @@
                 <div id="header-top-1">
                     <p id="header-top-logo">LOGO</p>
                     <h1>GENERIC TOWN</h1>
-                    <p id="header-top-contact"><a>CONTACT US</a></p>
+                    <p id="header-top-contact"><a href="index.html">CONTACT US</a></p>
+                    <button id="burger-menu-button">≡</button>
                 </div>
                 <div id="header-top-2">
                     <h2>GARDEN CENTRE</h2>
@@ -25,12 +26,60 @@
                     <li><a href="index.html">Plants</a></li>
                     <li><a href="index.html">Outdoor</a></li>
                     <li><a href="index.html">Pets</a></li>
+                    
+                </ul>
+            </nav>
+            <nav id="burger-menu" class="burger-mode burger-open">
+                <ul id="burger-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Restaurant</a></li>
+                    <li><a href="index.html">Foodhall</a></li>
+                    <li><a href="index.html">Clothing</a></li>
+                    <li><a href="index.html">Plants</a></li>
+                    <li><a href="index.html">Outdoor</a></li>
+                    <li><a href="index.html">Pets</a></li>
                 </ul>
             </nav>
         </header>
         <section id="slideshow-section">
             <div id="slideshow">
-                <img src="img/home_1.jpg">
+                <!--<img src="img/home_1.jpg">-->
+                <div class="slides fade">
+                    <div class="number-text">1 / 5</div>
+                    <img src="img/home_1.jpg">
+                    <div class="caption-text">We are open every day of the week, 10 AM to 6 PM</div>
+                </div>
+                <div class="slides fade">
+                    <div class="number-text">2 / 5</div>
+                    <img src="img/home_2.jpg">
+                    <div class="caption-text">Check out our food, clothing, garden tools and more</div>
+                </div>
+                <div class="slides fade">
+                    <div class="number-text">3 / 5</div>
+                    <img src="img/home_3.jpg">
+                    <div class="caption-text">Explore our historic buildings and beautiful gardens</div>
+                </div>
+                <div class="slides fade">
+                    <div class="number-text">4 / 5</div>
+                    <img src="img/home_4.jpg">
+                    <div class="caption-text">Enjoy a wide range of plants in our greenhouses</div>
+                </div>
+                <div class="slides fade">
+                    <div class="number-text">5 / 5</div>
+                    <img src="img/home_5.jpg">
+                    <div class="caption-text">We look forward to seeing you!</div>
+                </div>
+                <div>
+                    <a class="prev-slide" onclick="changeSlides(-1)">&#10094;</a>
+                    <a class="next-slide" onclick="changeSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <div id="dot-input">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </section>
         <section id="main-section">
