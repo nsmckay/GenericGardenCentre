@@ -8,14 +8,19 @@ body {
 
 h1 {
     font-size: 50px;
+    font-family: 'Young Serif', 'Times New Roman', Times, serif;
+    font-weight: normal;
     margin: 0;
     padding: 0;
+    padding-left: 120px;
     padding-top: 10px;
     color: white;
 }
 
 h2 {
     font-size: 26px;
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
+    font-weight: normal;
     margin: 0;
     padding: 0;
     padding-bottom: 10px;
@@ -51,6 +56,12 @@ footer {
 
 #header-top-logo {
     justify-self: flex-start;
+    position: absolute;
+    top: 15;
+    left: 10;
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
 }
 
 #header-top-logo {
@@ -71,6 +82,8 @@ footer {
 
 #header-top-contact a {
     color: white;
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
+    padding-right: 20px;
 }
 
 #burger-menu-button {
@@ -79,7 +92,7 @@ footer {
     color: white;
     background-color: black;
     font-size: 20px;
-    font-weight: bold;
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
     height: 30px;
     width: 30px;
     border-radius: 50px;
@@ -120,6 +133,7 @@ footer {
 }
 
 #burger-menu a {
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: white;
 }
@@ -153,6 +167,7 @@ footer {
 #header-nav-list a {
     color: darkgreen;
     font-weight: bold;
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
 }
 
 #header-nav-list a:hover {
@@ -300,6 +315,7 @@ footer {
 }
 
 .feature p {
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
     font-weight: bold;
     position: absolute;
     width: 40%;
@@ -343,6 +359,7 @@ footer-nav:last-child {
 .footer-nav-list a {
     color: white;
     font-weight: bold;
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
@@ -366,6 +383,9 @@ footer-nav:last-child {
 }
 
 @media screen and (max-width: 1000px) {
+    #header-top-logo {
+        display: none;
+    }
     .prev-slide, .next-slide {
         top: 26%;
     }
@@ -388,11 +408,12 @@ footer-nav:last-child {
 }
 
 @media screen and (max-width: 650px) {
-    #header-top-logo {
-        display: none;
-    }
     h1 {
         font-size: 44px;
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 20px;
     }
     #header-nav-list {
         display: none;
@@ -412,6 +433,7 @@ footer-nav:last-child {
     }
     .caption-text {
         top: 45%;
+        font-size: 30px;
     }
     #main-text {
         margin-left: 50px;
