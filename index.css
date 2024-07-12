@@ -277,6 +277,26 @@ footer {
     line-height: 1.5;
 }
 
+#menu-button {
+    background-color: lightgreen;
+    font-family: 'Sunflower', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:darkgreen;
+    border: 3px solid darkgreen;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgba(10,10,10,0.1);
+    border: 3px solid black;
+}
+
 #container {
     display: flex;
     flex-direction: row;
@@ -287,7 +307,7 @@ footer {
     
 }
 
-.feature {
+.feature, .non-feature {
     width: 25vw;
     height: 35vh;
     min-width: 200px;
@@ -298,7 +318,7 @@ footer {
     overflow: hidden;
 }
 
-.feature img {
+.feature img, .non-feature img {
     height: 100%;
     width: 100%;
     padding: 0;
@@ -396,7 +416,7 @@ footer-nav:last-child {
         margin-left: 100px;
         margin-right: 100px;
     }
-    .feature {
+    .feature, .non-feature {
         width: 30vw;
     }
     .footer-col {
@@ -439,7 +459,7 @@ footer-nav:last-child {
         margin-left: 50px;
         margin-right: 50px;
     }
-    .feature {
+    .feature, .non-feature {
         width: 90vw;
     }
     #footer-nav {
