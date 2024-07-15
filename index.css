@@ -278,6 +278,7 @@ footer {
 }
 
 #menu-button {
+    display: inline-block;
     background-color: lightgreen;
     font-family: 'Sunflower', Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -285,8 +286,10 @@ footer {
     border: 3px solid darkgreen;
     padding-left: 10px;
     padding-right: 10px;
-    height: 50px;
-    margin-top: 20px;
+    padding: 10px;
+    padding-bottom: 5px;
+    height: 30px;
+    margin-top: 25px;
     margin-bottom: 0;
 }
 
@@ -295,6 +298,64 @@ footer {
     color: black;
     background-color: rgba(10,10,10,0.1);
     border: 3px solid black;
+}
+
+#menu-section {
+    background-color: #fffdc2;
+    background-image: linear-gradient(#fffdc2, #fffb80);
+    padding: 30px;
+    border: solid 8px saddlebrown;
+    margin-top: 50px;
+}
+
+#menu-section h1 {
+    color: black;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#menu-section h3 {
+    text-align: left;
+}
+
+#menu-section p {
+    line-height: 2;
+}
+
+#menu-section span {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin: auto;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.menu-price {
+    font-weight: bold;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: auto;
+    margin-right: 30px;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.solid-break {
+    border-bottom: 4px solid black;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.dash-break {
+    border-bottom: 2px dashed black;
+    margin: 0;
+    margin-top: 30px;
 }
 
 #container {
@@ -425,6 +486,15 @@ footer-nav:last-child {
     #footer-end {
         margin-left: 100px;
     }
+    #menu-section {
+        padding: 20px;
+    }
+    #menu-item {
+        margin-left: 20px;
+    }
+    #menu-price {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -479,5 +549,14 @@ footer-nav:last-child {
     #footer-end {
         margin-left: 40px;
         font-size: 12px;
+    }
+    #menu-section {
+        padding: 10px;
+    }
+    #menu-item {
+        margin-left: 10px;
+    }
+    #menu-price {
+        margin-right: 10px;
     }
 }
