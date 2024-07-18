@@ -358,6 +358,12 @@ footer {
     margin-top: 30px;
 }
 
+#address {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 #container {
     display: flex;
     flex-direction: row;
